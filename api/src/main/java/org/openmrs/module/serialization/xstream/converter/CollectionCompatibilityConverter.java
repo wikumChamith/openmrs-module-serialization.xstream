@@ -22,7 +22,7 @@ import org.hibernate.collection.internal.PersistentSet;
 import org.hibernate.collection.internal.PersistentSortedMap;
 import org.hibernate.collection.internal.PersistentSortedSet;
 import org.hibernate.collection.spi.PersistentCollection;
-import org.openmrs.annotation.OpenmrsProfile;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -35,7 +35,7 @@ import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-@OpenmrsProfile(openmrsPlatformVersion = "2.*")
+@Component
 public class CollectionCompatibilityConverter implements CollectionCompatibility {
 
 	@Override
